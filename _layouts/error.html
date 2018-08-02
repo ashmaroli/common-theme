@@ -1,0 +1,26 @@
+{% include top.html %}
+
+<body class="flex wrap">
+  <header>
+    <div class="grid">
+      <div class="unit whole align-center">
+        <a href="/">
+          <span class="sr-only">Jekyll</span>
+          <img src="https://jekyllrb.com/img/logo-2x.png" width="249" height="115" alt="Jekyll Logo">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+
+    <div class="search-on-errror">
+      {% include search/input.html %}
+    </div>
+  </main>
+
+  {% include anchor_links.html %}
+  {% include search/script.html %}
+</body>
+</html>

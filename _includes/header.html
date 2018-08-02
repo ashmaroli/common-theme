@@ -1,0 +1,31 @@
+<header>
+  <div class="grid">
+    <div class="logo center-on-mobiles">
+      <a href="/">
+        <span class="sr-only">Jekyll</span>
+        <img src="/img/logo-2x.png" width="140" height="65" alt="Jekyll Logo">
+      </a>
+    </div>
+    <div class="navbar hide-on-mobiles">
+      <nav class="navbar-unit main-nav">
+        {% include primary-nav-items.html %}
+      </nav>
+      <div class="navbar-unit search">
+        {% include search/input.html %}
+      </div>
+      <div class="navbar-unit meta">
+        <ul>
+          <li>
+            <a href="/">v{{ site.version }}</a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.repository | default: 'jekyll/common-theme'}}">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="mobile-nav show-on-mobiles">
+    {% include mobile-nav-items.html %}
+  </nav>
+</header>

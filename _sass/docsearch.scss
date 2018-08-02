@@ -1,0 +1,99 @@
+.searchbox {
+  margin: 0 10px;
+  padding-top: 1px;
+  width: 210px;
+  height: 35px !important;
+
+  .searchbox__input {
+    padding: 6px 5px 5px 33px;
+    font-size: 0.75em;
+    border: none;
+    border-radius: 5px;
+    color: #555;
+    background-color: #333 !important;
+    box-shadow: 0 0 1px 0 #555;
+
+    &::-webkit-input-placeholder {
+      color: #aaa;
+    }
+    &:-ms-input-placeholder {
+      color: #aaa;
+    }
+    &::placeholder {
+      color: #aaa;
+    }
+
+    &:focus, &:active {
+      color: #eaeaea;
+      background-color: #212121 !important;
+    }
+  }
+
+  .searchbox__reset { top: 10px }
+}
+
+main .searchbox {
+  margin: 0;
+  width: 100%;
+  height: 50px !important;
+  .searchbox__input {
+    padding-left: 40px;
+    background-color: #272727 !important;
+    box-shadow: 0 0 1px 0 #555;
+  }
+  .searchbox__reset { top: 17px; right: 18px }
+  .searchbox__submit { left: 5px }
+}
+
+.searchbox__submit svg { fill: #fc0 }
+.searchbox__reset svg { fill: #999 }
+
+.algolia-autocomplete {
+  .ds-dropdown-menu {
+    font-size: 1rem;
+    text-shadow: none;
+
+    .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
+      background-color: rgba(221, 221, 221, 0.5);
+    }
+  }
+
+  .algolia-docsearch-suggestion--category-header {
+    background-color: #444;
+    color: #ddd;
+    padding: 0.35em;
+  }
+
+  .algolia-docsearch-suggestion--subcategory-column {
+    color: #444;
+  }
+
+  .algolia-docsearch-suggestion--highlight {
+    background-color: #fc0;
+    color: #222;
+  }
+
+  .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
+    box-shadow: inset 0 -2px 0 0 #fc0;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 889px) {
+  .searchbox { width: 120% }
+}
+
+@media (min-width: 890px) and (max-width: 925px) {
+  .searchbox { width: 100% }
+}
+
+@media (min-width: 926px) and (max-width: 960px) {
+  .searchbox { width: 105% }
+}
+
+@media (min-width: 961px) and (max-width: 980px) {
+  .searchbox { width: 110% }
+}
+
+@media (min-width: 980px) {
+  .searchbox { width: 125% }
+}

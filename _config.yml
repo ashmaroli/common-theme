@@ -1,0 +1,5 @@
+version: 0.1.0
+name: Jekyll Common Theme
+description: Uniform experience across all sites under jekyllrb.com domain
+plugins:
+- jekyll-seo-tag
